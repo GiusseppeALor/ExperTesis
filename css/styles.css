@@ -6,7 +6,6 @@ body {
 
 .hero-section {
     height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -30,7 +29,7 @@ body {
 /* Navbar Mejorado */
 .navbar {
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #6d5eac, #48b1bf);
+    background: linear-gradient(135deg, #ffffff, #33a360);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
@@ -127,6 +126,62 @@ body {
 .service-card:hover {
     transform: translateY(-10px);
 }
+
+/* Sección ¿Cómo Funciona? */
+#como-funciona {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.step-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.step-box:hover {
+    background: #9deca3; 
+    transform: scale(1.05);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.step-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stepImage {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
 
 /* Testimonios */
 .testimonial-card {

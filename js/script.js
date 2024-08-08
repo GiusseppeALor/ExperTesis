@@ -1,7 +1,3 @@
-document.getElementById('whatsappButton').addEventListener('click', function() {
-    window.location.href = 'https://wa.me/1234567890'; 
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     const stepImage = document.getElementById('stepImage');
 

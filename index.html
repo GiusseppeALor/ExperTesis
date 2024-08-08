@@ -44,14 +44,17 @@
     </nav>
     
 <br><br><br>
-    <header class="hero-section">
-        <div class="overlay"></div>
-        <div class="hero-content text-center">
-            <h1 class="display-4 text-white">Transforma tu Tesis en Éxito</h1>
-            <p class="lead text-white">Con nuestro asesoramiento experto, tus ideas se convertirán en realidad.</p>
-            <a href="#servicios" class="btn btn-primary btn-lg mt-3">Descubre Más</a>
-        </div>
-    </header>
+<div class="hero-section">
+    <div class="video-overlay"></div>
+    <video autoplay muted loop id="heroVideo" class="hero-video">
+        <source src="video/fondo.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+        <h1>Transforma tu Tesis en Éxito</h1>
+        <p>Con nuestro asesoramiento experto, tus ideas se convertirán en realidad.</p>
+    </div>
+</div>
+
 
     <section id="servicios" class="container py-5">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
@@ -124,58 +127,56 @@
             </div>
         </div>
     </div>
-</section>
+</section> 
 
-    
-    
-
-    <section id="clientes" class="container-fluid bg-light py-5">
-        <h2 class="text-center mb-5">Testimonios de Clientes</h2>
-        <div id="clientesCarousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="d-flex justify-content-center">
-                        <div class="card testimonial-card p-4">
-                            <p>"El mejor asesoramiento que he recibido. Mi tesis fue un éxito total."</p>
-                            <footer class="blockquote-footer">Juan Pérez</footer>
-                        </div>
-                    </div>
+<section id="testimonios" class="container-fluid py-5">
+    <h2 class="text-center mb-5">Testimonios de Nuestros Clientes</h2>
+    <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="testimonial-card p-4">
+                <div class="testimonial-content">
+                    <p>"El servicio que recibí fue excepcional. La atención al detalle y la profesionalidad fueron insuperables."</p>
                 </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="card testimonial-card p-4">
-                            <p>"Su atención al detalle y profesionalismo son inigualables. ¡Altamente recomendados!"</p>
-                            <footer class="blockquote-footer">Ana García</footer>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="d-flex justify-content-center">
-                        <div class="card testimonial-card p-4">
-                            <p>"Gracias a su ayuda, mi tesis recibió la máxima calificación."</p>
-                            <footer class="blockquote-footer">Carlos López</footer>
-                        </div>
-                    </div>
+                <div class="testimonial-author mt-4">
+                    <img src="img/cliente1.jpg" class="testimonial-img rounded-circle">
+                    <h5 class="mt-2">Juan Pérez</h5>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#clientesCarousel" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="carousel-control-next" href="#clientesCarousel" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Siguiente</span>
-            </a>
         </div>
-    </section>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="testimonial-card p-4">
+                <div class="testimonial-content">
+                    <p>"Estoy impresionado con la calidad del trabajo y la dedicación del equipo. Sin duda, los mejores en el mercado."</p>
+                </div>
+                <div class="testimonial-author mt-4">
+                    <img src="img/cliente2.jpg" class="testimonial-img rounded-circle">
+                    <h5 class="mt-2">Ana Gómez</h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="testimonial-card p-4">
+                <div class="testimonial-content">
+                    <p>"Recomendaría este servicio a cualquier persona que busque resultados profesionales y confiables."</p>
+                </div>
+                <div class="testimonial-author mt-4">
+                    <img src="img/cliente3.jpg" class="testimonial-img rounded-circle">
+                    <h5 class="mt-2">Carlos Ruiz</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="contacto" class="container text-center py-5">
-        <h2>Contáctanos</h2>
-        <p>Puedes comunicarte con nosotros para más información.</p>
-        <button id="whatsappButton" class="btn btn-success btn-lg">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-        </button>
-    </section>
+
+<section id="contacto" class="container text-center py-5">
+    <h2>Contáctanos</h2>
+    <p>Puedes comunicarte con nosotros para más información.</p>
+    <a href="https://wa.me/918749479" id="whatsappButton" class="btn btn-success btn-lg" target="_blank">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+</section>
+
 
     <footer class="bg-dark text-white text-center py-4">
         <p>&copy; 2024 ExperTesis Asesores</p>

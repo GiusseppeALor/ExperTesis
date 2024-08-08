@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesoramiento de Tesis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-top mr-2">
+                ExperTesis Asesores
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicio"><i class="fas fa-concierge-bell"></i> Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i> Clientes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Testimonios</a>
+                            <a class="dropdown-item" href="#">Casos de Éxito</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto"><i class="fas fa-envelope"></i> Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+<br><br><br>
+    <header class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content text-center">
+            <h1 class="display-4 text-white">Transforma tu Tesis en Éxito</h1>
+            <p class="lead text-white">Con nuestro asesoramiento experto, tus ideas se convertirán en realidad.</p>
+            <a href="#servicios" class="btn btn-primary btn-lg mt-3">Descubre Más</a>
+        </div>
+    </header>
+
+    <section id="servicios" class="container py-5">
+        <h2 class="text-center mb-5">Nuestros Servicios</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <div class="icon mb-3">
+                        <i class="fas fa-chalkboard-teacher fa-3x text-primary"></i>
+                    </div>
+                    <h5>Asesoría Personalizada</h5>
+                    <p>Te acompañamos en cada paso de tu tesis con asesoramiento experto.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <div class="icon mb-3">
+                        <i class="fas fa-spell-check fa-3x text-primary"></i>
+                    </div>
+                    <h5>Revisión y Corrección</h5>
+                    <p>Corregimos tu tesis para asegurar que cumpla con todos los estándares académicos.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-card text-center p-4">
+                    <div class="icon mb-3">
+                        <i class="fas fa-pencil-alt fa-3x text-primary"></i>
+                    </div>
+                    <h5>Redacción y Estructuración</h5>
+                    <p>Te ayudamos a redactar y estructurar tus ideas de manera clara y efectiva.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clientes" class="container-fluid bg-light py-5">
+        <h2 class="text-center mb-5">Testimonios de Clientes</h2>
+        <div id="clientesCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+                        <div class="card testimonial-card p-4">
+                            <p>"El mejor asesoramiento que he recibido. Mi tesis fue un éxito total."</p>
+                            <footer class="blockquote-footer">Juan Pérez</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card testimonial-card p-4">
+                            <p>"Su atención al detalle y profesionalismo son inigualables. ¡Altamente recomendados!"</p>
+                            <footer class="blockquote-footer">Ana García</footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center">
+                        <div class="card testimonial-card p-4">
+                            <p>"Gracias a su ayuda, mi tesis recibió la máxima calificación."</p>
+                            <footer class="blockquote-footer">Carlos López</footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#clientesCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#clientesCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="contacto" class="container text-center py-5">
+        <h2>Contáctanos</h2>
+        <p>Puedes comunicarte con nosotros para más información.</p>
+        <button id="whatsappButton" class="btn btn-success btn-lg">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </button>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 TesisPro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

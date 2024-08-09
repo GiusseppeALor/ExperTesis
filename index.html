@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asesoramiento de Tesis</title>
+    <title>ExperTesis Asesores</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand navtitulo" href="#">
                 <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-top mr-2">
                 ExperTesis Asesores
             </a>
@@ -32,7 +32,6 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Testimonios</a>
-                            <a class="dropdown-item" href="#">Casos de Éxito</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -50,8 +49,8 @@
         <source src="video/fondo.mp4" type="video/mp4">
     </video>
     <div class="hero-content">
-        <h1>Transforma tu Tesis en Éxito</h1>
-        <p>Con nuestro asesoramiento experto, tus ideas se convertirán en realidad.</p>
+        <h1 class="titulo1">TRANSFORMA TU TESIS EN ÉXITO</h1>
+        <p>Con nuestro asesoramiento experto, tus ideas se convertirán en realidad</p>
     </div>
 </div>
 
@@ -170,17 +169,49 @@
 
 
 <section id="contacto" class="container text-center py-5">
-    <h2>Contáctanos</h2>
-    <p>Puedes comunicarte con nosotros para más información.</p>
-    <a href="https://wa.me/918749479" id="whatsappButton" class="btn btn-success btn-lg" target="_blank">
-        <i class="fab fa-whatsapp"></i> WhatsApp
-    </a>
+    <h2 class="contact-title">Contáctanos</h2>
+    <p class="contact-description">Estamos aquí para ayudarte. ¡Comunícate con nosotros ahora!</p>
+    <button id="whatsappButton" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> Envíanos un mensaje
+    </button>
 </section>
+<br><br>
 
 
-    <footer class="bg-dark text-white text-center py-4">
-        <p>&copy; 2024 ExperTesis Asesores</p>
-    </footer>
+
+<footer id="main-footer" class="text-center text-lg-start">
+    <div class="container p-4">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-4 footer-title">Sobre Nosotros</h5>
+                <p class="footer-text">
+                    Somos una empresa dedicada a transformar tus ideas en realidad. Nuestro equipo experto está aquí para ayudarte en cada paso del camino.
+                </p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <h5 class="text-uppercase mb-4 footer-title">Enlaces Rápidos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#inicio" class="footer-link">Inicio</a></li>
+                    <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                    <li><a href="#contacto" class="footer-link">Contáctanos</a></li>
+                    <li><a href="#testimonios" class="footer-link">Testimonios</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-4">
+                <h5 class="text-uppercase mb-4 footer-title">Contáctanos</h5>
+                <p class="footer-text"><i class="fas fa-phone"></i> +51 123456789</p>
+                <p class="footer-text"><i class="fas fa-envelope"></i> correo@hotmail.com</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom text-center p-3">
+        <p class="footer-text mb-0">© 2024 ExperTesis Asesores</p>
+    </div>
+</footer>
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>

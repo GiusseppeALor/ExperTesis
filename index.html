@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-gradient fixed-top">
         <div class="container">
@@ -15,11 +17,11 @@
                 <img src="https://via.placeholder.com/50" alt="Logo" class="d-inline-block align-top mr-2">
                 ExperTesis Asesores
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler hamburger" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto nav-links">
                     <li class="nav-item active">
                         <a class="nav-link" href="#inicio"><i class="fas fa-home"></i> Inicio</a>
                     </li>
@@ -27,7 +29,7 @@
                         <a class="nav-link" href="#servicio"><i class="fas fa-concierge-bell"></i> Servicios</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user"></i> Clientes
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -41,19 +43,18 @@
             </div>
         </div>
     </nav>
-    
-<br><br><br>
-<div class="hero-section">
-    <div class="video-overlay"></div>
-    <video autoplay muted loop id="heroVideo" class="hero-video">
-        <source src="video/fondo.mp4" type="video/mp4">
-    </video>
-    <div class="hero-content">
-        <h1 class="titulo1">TRANSFORMA TU TESIS EN ÉXITO</h1>
-        <p>Transformamos tus ideas en realidad</p>
-    </div>
-</div>
 
+    <br><br><br>
+    <div class="hero-section">
+        <div class="video-overlay"></div>
+        <video autoplay muted loop id="heroVideo" class="hero-video">
+            <source src="video/fondo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-content">
+            <h1 class="titulo1">TRANSFORMA TU TESIS EN ÉXITO</h1>
+            <p>Transformamos tus ideas en realidad</p>
+        </div>
+    </div>
 
     <section id="servicios" class="container py-5">
         <h2 class="text-center mb-5">Nuestros Servicios</h2>
@@ -76,7 +77,7 @@
                     <p>Corregimos tu tesis para asegurar que cumpla con todos los estándares académicos.</p>
                 </div>
             </div>
-            <div class="col-md-4">  
+            <div class="col-md-4">
                 <div class="service-card text-center p-4">
                     <div class="icon mb-3">
                         <i class="fas fa-pencil-alt fa-3x text-primary"></i>
@@ -88,134 +89,129 @@
         </div>
     </section>
 
-<section id="como-funciona" class="container py-5">
-    <h2 class="text-center mb-5">¿Cómo Funciona?</h2>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="step-container">
-                <div class="step-box" id="step1">
-                    <div class="step-number">1</div>
-                    <div class="step-title">Paso 1: Pagar</div>
-                    <p>Descripción del primer paso para consumir el servicio.</p>
-                </div>
-                <div class="step-box" id="step2">
-                    <div class="step-number">2</div>
-                    <div class="step-title">Paso 2: Comprobar Boleta</div>
-                    <p>Descripción del segundo paso para consumir el servicio.</p>
-                </div>
-                <div class="step-box" id="step3">
-                    <div class="step-number">3</div>
-                    <div class="step-title">Paso 3: Editar</div>
-                    <p>Descripción del tercer paso para consumir el servicio.</p>
-                </div>
-                <div class="step-box" id="step4">
-                    <div class="step-number">4</div>
-                    <div class="step-title">Paso 4: Finalizar</div>
-                    <p>Descripción del cuarto paso para consumir el servicio.</p>
-                </div>
-                <div class="step-box" id="step4">
-                    <div class="step-number">5</div>
-                    <div class="step-title">Paso 5: Finalizar</div>
-                    <p>Descripción del quinto paso para consumir el servicio.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="image-container">
-                <img id="stepImage" src="img/Pensando.png" alt="Imagen del paso">
-            </div>
-        </div>
-    </div>
-</section> 
-
-<section id="testimonios" class="container-fluid py-5">
-    <h2 class="text-center mb-5">Testimonios de Nuestros Clientes</h2>
-    <div class="row justify-content-center">
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="testimonial-card p-4">
-                <div class="testimonial-content">
-                    <p>"El servicio que recibí fue excepcional. La atención al detalle y la profesionalidad fueron insuperables."</p>
-                </div>
-                <div class="testimonial-author mt-4">
-                    <img src="img/cliente1.jpg" class="testimonial-img rounded-circle">
-                    <h5 class="mt-2">Juan Pérez</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="testimonial-card p-4">
-                <div class="testimonial-content">
-                    <p>"Estoy impresionado con la calidad del trabajo y la dedicación del equipo. Sin duda, los mejores en el mercado."</p>
-                </div>
-                <div class="testimonial-author mt-4">
-                    <img src="img/cliente2.jpg" class="testimonial-img rounded-circle">
-                    <h5 class="mt-2">Ana Gómez</h5>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-            <div class="testimonial-card p-4">
-                <div class="testimonial-content">
-                    <p>"Recomendaría este servicio a cualquier persona que busque resultados profesionales y confiables."</p>
-                </div>
-                <div class="testimonial-author mt-4">
-                    <img src="img/cliente3.jpg" class="testimonial-img rounded-circle">
-                    <h5 class="mt-2">Carlos Ruiz</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section id="contacto" class="container text-center py-5">
-    <h2 class="contact-title">Contáctanos</h2>
-    <p class="contact-description">Estamos aquí para ayudarte. ¡Comunícate con nosotros ahora!</p>
-    <button id="whatsappButton" class="btn btn-whatsapp">
-        <i class="fab fa-whatsapp"></i> Envíanos un mensaje
-    </button>
-</section>
-<br><br>
-
-
-
-<footer id="main-footer" class="text-center text-lg-start">
-    <div class="container p-4">
+    <section id="como-funciona" class="container py-5">
+        <h2 class="text-center mb-5">¿Cómo Funciona?</h2>
         <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4">
-                <h5 class="text-uppercase mb-4 footer-title">Sobre Nosotros</h5>
-                <p class="footer-text">
-                    Somos una empresa dedicada a transformar tus ideas en realidad. Nuestro equipo experto está aquí para ayudarte en cada paso del camino.
-                </p>
+            <div class="col-md-6">
+                <div class="step-container">
+                    <div class="step-box" id="step1">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Paso 1: Pagar</div>
+                        <p>Descripción del primer paso para consumir el servicio.</p>
+                    </div>
+                    <div class="step-box" id="step2">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Paso 2: Comprobar Boleta</div>
+                        <p>Descripción del segundo paso para consumir el servicio.</p>
+                    </div>
+                    <div class="step-box" id="step3">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Paso 3: Editar</div>
+                        <p>Descripción del tercer paso para consumir el servicio.</p>
+                    </div>
+                    <div class="step-box" id="step4">
+                        <div class="step-number">4</div>
+                        <div class="step-title">Paso 4: Finalizar</div>
+                        <p>Descripción del cuarto paso para consumir el servicio.</p>
+                    </div>
+                    <div class="step-box" id="step5">
+                        <div class="step-number">5</div>
+                        <div class="step-title">Paso 5: Finalizar</div>
+                        <p>Descripción del quinto paso para consumir el servicio.</p>
+                    </div>
+                </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 mb-4">
-                <h5 class="text-uppercase mb-4 footer-title">Enlaces Rápidos</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#inicio" class="footer-link">Inicio</a></li>
-                    <li><a href="#servicios" class="footer-link">Servicios</a></li>
-                    <li><a href="#contacto" class="footer-link">Contáctanos</a></li>
-                    <li><a href="#testimonios" class="footer-link">Testimonios</a></li>
-                </ul>
-            </div>
-
-            <div class="col-lg-4 col-md-12 mb-4">
-                <h5 class="text-uppercase mb-4 footer-title">Contáctanos</h5>
-                <p class="footer-text"><i class="fas fa-phone"></i> +51 123456789</p>
-                <p class="footer-text"><i class="fas fa-envelope"></i> correo@hotmail.com</p>
+            <div class="col-md-6">
+                <div class="image-container">
+                    <img id="stepImage" src="img/Pensando.png" alt="Imagen del paso">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="footer-bottom text-center p-3">
-        <p class="footer-text mb-0">© 2024 ExperTesis Asesores</p>
-    </div>
-</footer>
+    <section id="testimonios" class="container-fluid py-5">
+        <h2 class="text-center mb-5">Testimonios de Nuestros Clientes</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <p>"El servicio que recibí fue excepcional. La atención al detalle y la profesionalidad fueron insuperables."</p>
+                    </div>
+                    <div class="testimonial-author mt-4">
+                        <img src="img/cliente1.jpg" class="testimonial-img rounded-circle">
+                        <h5 class="mt-2">Juan Pérez</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <p>"Estoy impresionado con la calidad del trabajo y la dedicación del equipo. Sin duda, los mejores en el mercado."</p>
+                    </div>
+                    <div class="testimonial-author mt-4">
+                        <img src="img/cliente2.jpg" class="testimonial-img rounded-circle">
+                        <h5 class="mt-2">Ana Gómez</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="testimonial-card p-4">
+                    <div class="testimonial-content">
+                        <p>"Recomendaría este servicio a cualquier persona que busque resultados profesionales y confiables."</p>
+                    </div>
+                    <div class="testimonial-author mt-4">
+                        <img src="img/cliente3.jpg" class="testimonial-img rounded-circle">
+                        <h5 class="mt-2">Carlos Ruiz</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="contacto" class="container text-center py-5">
+        <h2 class="contact-title">Contáctanos</h2>
+        <p class="contact-description">Estamos aquí para ayudarte. ¡Comunícate con nosotros ahora!</p>
+        <button id="whatsappButton" class="btn btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Envíanos un mensaje
+        </button>
+    </section>
+
+    <br><br>
+
+    <footer id="main-footer" class="text-center text-lg-start">
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 footer-title">Sobre Nosotros</h5>
+                    <p class="footer-description">Somos un equipo de profesionales dedicados a ayudar a los estudiantes a alcanzar el éxito en sus tesis.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 footer-title">Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#servicios" class="footer-link">Servicios</a></li>
+                        <li><a href="#testimonios" class="footer-link">Testimonios</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-uppercase mb-4 footer-title">Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#" class="footer-link"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#" class="footer-link"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 footer-bottom">
+            &copy; 2024 ExperTesis Asesores. Todos los derechos reservados.
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>

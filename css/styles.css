@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaisei+Opti&display=swap');
 /* Estilos Generales */
-* {
-    margin: 0;
-    padding: 0;
-  }  
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -152,7 +148,14 @@ img {
 }
 
 @media (max-width: 600px) {
-    h1 {
+
+    * {
+    margin: 0;
+    padding: 0;
+  }  
+
+
+    .titulo1 {
         font-size: 1.5em;
     }
 

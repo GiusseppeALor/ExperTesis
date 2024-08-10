@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaisei+Opti&display=swap');
-/* Estilos Generales */
 
+/* Estilos Generales */
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
 }
 
-.titulo1{
+.titulo1 {
     font-family: 'Bebas Neue';
     font-size: 7em;
 }
@@ -14,11 +14,13 @@ body {
 img {
     max-width: 100%;
     height: auto;
-  }  
+}
 
-.navtitulo{
+.navtitulo {
     font-family: 'Kaisei Opti';
 }
+
+
 
 /* Hero Section con Video de Fondo */
 .hero-section {
@@ -61,9 +63,16 @@ img {
 /* Navbar Mejorado */
 .navbar {
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #ffffff, #8fc893 ,#33a360);
+    background: linear-gradient(135deg, #ffffff, #8fc893, #33a360);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;}
+
+.navbar-hidden {
+    transform: translateY(-100%);
+}
+
+.navbar-visible {
+    transform: translateY(0);
 }
 
 .navbar-brand {
@@ -121,6 +130,12 @@ img {
     box-shadow: none;
 }
 
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="none" stroke="%23000" stroke-width="2" d="M1 4h14M1 8h14M1 12h14"/%3E%3C/svg%3E');
+    background-size: 1.25em 1.25em;
+}
+
+/* Formulario de Búsqueda */
 .form-inline .form-control {
     background: rgba(255, 255, 255, 0.2);
     border: none;
@@ -147,13 +162,12 @@ img {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
+/* Media Queries */
 @media (max-width: 600px) {
-
     * {
-    margin: 0;
-    padding: 0;
-  }  
-
+        margin: 0;
+        padding: 0;
+    }
 
     .titulo1 {
         font-size: 1.5em;
@@ -167,11 +181,16 @@ img {
         font-size: 1em;
         padding: 8px 16px;
     }
-}
+
+    .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"%3E%3Cpath fill="none" stroke="%23000" stroke-width="2" d="M1 4h14M1 8h14M1 12h14"/%3E%3C/svg%3E');
+        background-size: 1.25em 1.25em;
+    }
+
     .nav-links.active {
         display: flex;
     }
-
+}
 
 /* Servicios */
 .service-card {
@@ -207,7 +226,7 @@ img {
 }
 
 .step-box:hover {
-    background: #9deca3; 
+    background: #9deca3;
     transform: scale(1.05);
 }
 
@@ -246,6 +265,7 @@ img {
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
 }
 
 /* Sección de Contacto */
@@ -406,4 +426,107 @@ img {
 
 .footer-bottom p:hover {
     color: #9deca3;
+}
+
+/* Sección ¿Cómo Funciona? */
+#como-funciona {
+    background-color: #f9f9f9;
+    padding: 3rem 0;
+}
+
+.step-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.step-box {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 1rem;
+    transition: background 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+
+.step-box:hover {
+    background: #9deca3;
+    transform: scale(1.05);
+}
+
+.step-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.step-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.step-box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stepImage {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+}
+
+/* Testimonios */
+.testimonial-card {
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+/* Servicios */
+.service-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Íconos de las Pasos */
+.step {
+    width: 200px;
+    height: 200px;
+    background-color: #e9ecef;
+    border-radius: 50%;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.step img {
+    width: 80%;
+    height: 80%;
+}
+
+.step:hover {
+    background-color: #343a40;
+}
+
+.step:hover img {
+    filter: invert(1);
 }

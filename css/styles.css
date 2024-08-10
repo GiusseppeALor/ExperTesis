@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaisei+Opti&display=swap');
 /* Estilos Generales */
+* {
+    margin: 0;
+    padding: 0;
+  }  
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
@@ -141,20 +146,18 @@ body {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        text-align: center;
+    p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 8px 16px;
     }
 }
     .nav-links.active {
@@ -395,18 +398,4 @@ body {
 
 .footer-bottom p:hover {
     color: #9deca3;
-}
-
-@media (max-width: 767px) {
-    .navbar-brand {
-        font-size: 24px;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .titulo1 {
-        font-size: 40px;
-    }
 }

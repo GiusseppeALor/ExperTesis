@@ -14,21 +14,7 @@ body {
     font-family: 'Kaisei Opti';
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-        padding: 8px 16px;
-    }
-}
-/* Hero Section */
+/* Hero Section con Video de Fondo */
 .hero-section {
     position: relative;
     height: 100vh;
@@ -66,7 +52,7 @@ body {
     z-index: 1;
 }
 
-/* Navbar */
+/* Navbar Mejorado */
 .navbar {
     padding: 1rem 2rem;
     background: linear-gradient(135deg, #ffffff, #8fc893 ,#33a360);
@@ -170,27 +156,11 @@ body {
         background-color: #fff;
         text-align: center;
     }
-
+}
     .nav-links.active {
         display: flex;
     }
 
-    .hamburger {
-        display: block;
-    }
-
-    .navbar-brand {
-        font-size: 24px;
-    }
-
-    .navbar-nav {
-        text-align: center;
-    }
-
-    .titulo1 {
-        font-size: 40px;
-    }
-}
 
 /* Servicios */
 .service-card {
@@ -356,7 +326,7 @@ body {
     margin-right: 0.5rem;
 }
 
-/* Footer */
+/* Footer Mejorado */
 #main-footer {
     background: linear-gradient(135deg, #333, #111);
     color: #ddd;

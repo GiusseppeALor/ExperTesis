@@ -396,3 +396,17 @@ body {
 .footer-bottom p:hover {
     color: #9deca3;
 }
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .titulo1 {
+        font-size: 40px;
+    }
+}

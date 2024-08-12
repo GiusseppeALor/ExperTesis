@@ -197,15 +197,45 @@ img {
 }
 
 /* Servicios */
-.service-card {
-    background: #f8f9fa;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+#servicios h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
+.accordion .card {
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
+.accordion .card-header {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.accordion .card-header .btn-link {
+    color: #007bff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.accordion .card-body {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.accordion .card-body ul {
+    padding-left: 1.5rem;
+}
+
+.accordion .card-body li {
+    margin-bottom: 0.5rem;
 }
 
 /* Sección ¿Cómo Funciona? */

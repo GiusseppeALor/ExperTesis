@@ -57,37 +57,54 @@
 
 
     <section id="servicios" class="container py-5">
-        <h2 class="text-center mb-5">Nuestros Servicios</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-card text-center p-4">
-                    <div class="icon mb-3">
-                        <i class="fas fa-chalkboard-teacher fa-3x text-primary"></i>
+        <h2 class="text-center mb-5">Servicios</h2>
+        
+        <div class="accordion" id="serviciosAccordion">
+            <div class="card">
+                <div class="card-header" id="serviciosOfrecemosHeader">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#serviciosOfrecemos" aria-expanded="true" aria-controls="serviciosOfrecemos">
+                            Servicios que ofrecemos
+                        </button>
+                    </h5>
+                </div>
+    
+                <div id="serviciosOfrecemos" class="collapse show" aria-labelledby="serviciosOfrecemosHeader" data-parent="#serviciosAccordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Asesoría en elaboración de proyecto de tesis cuantitativa.</li>
+                            <li>Asesoría en elaboración de tesis cuantitativa.</li>
+                            <li>Asesoría en elaboración de artículos de revisión sistemática.</li>
+                            <li>Asesoría en elaboración de artículos de opinión.</li>
+                            <li>Elaboración de monografías.</li>
+                            <li>Elaboración de trabajos universitarios.</li>
+                        </ul>
                     </div>
-                    <h5>Asesoría Personalizada</h5>
-                    <p>Te acompañamos en cada paso de tu tesis con asesoramiento experto.</p>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="service-card text-center p-4">
-                    <div class="icon mb-3">
-                        <i class="fas fa-spell-check fa-3x text-primary"></i>
-                    </div>
-                    <h5>Revisión y Corrección</h5>
-                    <p>Corregimos tu tesis para asegurar que cumpla con todos los estándares académicos.</p>
+            <div class="card">
+                <div class="card-header" id="serviciosComplementariosHeader">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#serviciosComplementarios" aria-expanded="false" aria-controls="serviciosComplementarios">
+                            Servicios complementarios
+                        </button>
+                    </h5>
                 </div>
-            </div>
-            <div class="col-md-4">  
-                <div class="service-card text-center p-4">
-                    <div class="icon mb-3">
-                        <i class="fas fa-pencil-alt fa-3x text-primary"></i>
+                <div id="serviciosComplementarios" class="collapse" aria-labelledby="serviciosComplementariosHeader" data-parent="#serviciosAccordion">
+                    <div class="card-body">
+                        <ul>
+                            <li>Levantamiento de observaciones.</li>
+                            <li>Elaboración de PPT.</li>
+                            <li>Disminución de porcentaje de similitud (Turnitin).</li>
+                            <li>Procesamiento estadístico.</li>
+                            <li>Simulación de defensa de tesis.</li>
+                        </ul>
                     </div>
-                    <h5>Redacción y Estructuración</h5>
-                    <p>Te ayudamos a redactar y estructurar tus ideas de manera clara y efectiva.</p>
                 </div>
             </div>
         </div>
     </section>
+    
 
 <section id="como-funciona" class="container py-5">
     <h2 class="text-center mb-5">¿Cómo Funciona?</h2>

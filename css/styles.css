@@ -67,7 +67,7 @@ img {
 /* Navbar Mejorado */
 .navbar {
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #8fc893, #33a360);
+    background: linear-gradient(135deg, #3c096c, #b5e2fa);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease-in-out;}
 
